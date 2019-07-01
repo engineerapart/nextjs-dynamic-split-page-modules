@@ -1,0 +1,25 @@
+{
+  "name": "nextjs-dynamic-split-page-modules",
+  "version": "1.0.0",
+  "author": {
+    "name": "Patrick",
+    "email": "patrick@engineerapart.com"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.4"
+  }
+}
