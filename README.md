@@ -22,3 +22,17 @@ The consequence of this loading model is:
 2. The actual page content bundle gets loaded later
 3. During SPA navigation, the page content bundle is being downloaded **AT THE SAME TIME** as the `getInitialProps` API requests. The result of this is that the page renders faster: In a stock Next.js app, the entire bundle has to be downloaded & evaluated before `getInitialProps` can be called. That is still true, we've simply significantly cut the initial bundle size required to call `getInitialProps`.
 4. Since the page content and `getInitialProps` are downloading at the same time, the page will render faster.
+
+### Custom server
+This example includes a custom server just to provide an example API call.
+
+It is not pertinent to the code splitting - the server.js file can be excluded (in which case you would run `next start`)
+
+## Getting started
+``` bash
+git clone git@github.com:engineerapart/nextjs-dynamic-split-page-modules.git
+cd nextjs-dynamic-split-page-modules
+yarn && yarn dev
+```
+
+Click on the `View Item` link. Observe the page's behavior both in the browser's dev tools as well as in the browswer itself.
